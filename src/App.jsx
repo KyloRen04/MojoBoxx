@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "./App.css";
 import TopNavbar from "./components/Navbar";
 import { MenuList } from "./components/IconList";
@@ -8,23 +7,23 @@ import Slider from "./components/Slider";
 import Cards from "./components/Cards";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <div className="container">
+    <div style={{margin: "10px"}}>
       <TopNavbar />
-        <div style={{ display: "flex", justifyContent: "space-around" }}>
-          {MenuList.map((menu) => {
-            return <Menu key={menu.id} value={menu} />;
-          })}
-        </div>
-        <br />
-        <Forms />
-        <br />
-        <Slider />
-        <br />
-        <h2 className="text-center" style={{marginBottom: "25px"}}>Great Stays, Breathtaking Deals</h2>
-        <Cards />
+      <div className="categories-menu">
+        {MenuList.map((menu) => {
+          return <Menu key={menu.id} value={menu} />;
+        })}
+      </div>
+      <br />
+      <Forms />
+      <br />
+      <Slider />
+      <br />
+      <h3 className="text-center" style={{ marginBottom: "25px" }}>
+        Great Stays, Breathtaking Deals
+      </h3>
+      <Cards />
     </div>
   );
 }

@@ -10,8 +10,8 @@ function TopNavbar() {
     <Navbar variant="dark" expand="lg">
       <Container>
         <Navbar.Brand href="#home">
-          <h1>Omega</h1>
-          <p>
+          <h3>Omega</h3>
+          <p style={{ fontSize: "12px" }}>
             Powered by{" "}
             <FontAwesomeIcon
               icon={faSquareCheck}
@@ -20,13 +20,13 @@ function TopNavbar() {
             <span style={{ color: "#1e3799" }}>cleartrip</span>
           </p>
         </Navbar.Brand>
-        <div style={{ display: "flex" }}>
+        <div style={{ display: "flex", alignItems: "center" }}>
           <FontAwesomeIcon
             icon={faBell}
-            size="2xl"
-            style={{ color: "#fff700", marginRight: "15px"}}
+            size="xl"
+            style={{ color: "#fff700", marginRight: "15px" }}
           />
-          <Navbar.Toggle  aria-controls="basic-navbar-nav" />
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
         </div>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">

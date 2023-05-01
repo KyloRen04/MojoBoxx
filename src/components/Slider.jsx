@@ -22,7 +22,7 @@ function Slider() {
         </Carousel.Item>
         <Carousel.Item>
           <img
-            style={{ borderRadius: "20px", height: "230px"}}
+            style={{ borderRadius: "20px", height: "230px" }}
             className="w-100"
             src="https://images.pexels.com/photos/1004584/pexels-photo-1004584.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             alt="Second slide"

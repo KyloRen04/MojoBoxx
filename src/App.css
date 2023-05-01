@@ -1,5 +1,5 @@
-body{
-  background-color:black!important;
+body {
+  background-color: black !important;
   color: white !important;
 }
 @media (prefers-reduced-motion: no-preference) {
@@ -14,4 +14,92 @@ body{
 
 .read-the-docs {
   color: #888;
+}
+
+.navbar-toggler {
+  padding: 4px !important;
+}
+
+.navbar-brand {
+  padding: 0px !important;
+}
+
+.navbar-brand p {
+  margin-bottom: 0px !important;
+}
+
+.categories-menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-column-gap: 10px;
+  margin-top: 20px;
+}
+
+.categories-menu-item {
+  display: flex;
+  padding: 0 8px;
+  border-radius: 5px;
+  border: 1px solid black;
+  text-align: center;
+  height: 75px;
+  justify-content: center;
+  align-items: center;
+}
+
+.categories-menu-item-info {
+  background-color: grey;
+  height: inherit;
+  width: 90%;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15px;
+}
+
+.categories-menu-item-info p {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.menu-item-clicked {
+  background-color: white;
+}
+
+.carousel-inner {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.w-100 {
+  filter: brightness(0.5) !important;
+}
+
+.inputForm-select {
+  background-color: #1e272e;
+  color: white;
+  border: none;
+  border-bottom: 1px solid grey;
+  width: 100%;
+  padding-bottom: 4px;
+  margin-left: 12px;
+}
+
+.inputForm-select:focus {
+  outline: none;
+}
+
+.calendar-picker {
+  position: relative;
+  width: 100%;
+  border-right: 1px solid grey;
+  margin-top: 12px !important;
+  display: flex;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  width: 10%;
+  /* display: none; */
 }

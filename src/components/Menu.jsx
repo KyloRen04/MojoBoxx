@@ -1,30 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Menu = ({ value }) => {
-  console.log(value);
-  const { id, title, icon } = value;
+  const [isClicked, setIsClicked] = useState(false);
+
+  const infoClassName = isClicked
+    ? "categories-menu-item-info menu-item-clicked"
+    : "categories-menu-item-info";
+
+  const { title, icon } = value;
   return (
     <div
-      style={{
-        display: "flex",
-        height: "75px",
-        width: "75px",
-        textAlign: "center",
-        borderRadius: "5px",
-        padding: "5px",
-        border: "1px solid black",
+      className="categories-menu-item"
+      onClick={() => {
+        setIsClicked(!isClicked);
       }}
     >
-      <div
-        style={{ backgroundColor: "white", padding: "1%", borderRadius: "5px" }}
-      >
+      <div className={infoClassName}>
         <img
-          src={value.icon}
-          height="40px"
-          width="40px"
+          src={icon}
+          height="32px"
+          width="32px"
           style={{ marginBottom: "5px" }}
         />
-        <p style={{ color: "black" }}>{value.title}</p>
+        <p>{title}</p>
       </div>
     </div>
   );
